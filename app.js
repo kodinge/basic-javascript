@@ -82,7 +82,7 @@ let people = [
 //some for check true or false
 // people.some((item) => console.log(item.age < 30));
 
-//every for check true or false at all list 
+//every for check true or false at all array 
 // people.every((item) => console.log(item.age < 30));
 
 //reduce for calc/sum
@@ -91,7 +91,7 @@ let people = [
 // }, 0);
 // console.log(reducePeople);
 
-//includes
+//includes check there is or not
 let items = [1, 2, 3, 4, 5]
 let includesItems = items.includes(3);
 console.log(includesItems);

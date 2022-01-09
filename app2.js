@@ -1,18 +1,27 @@
 const users = [
-    {username: 'maradho'}, 
-    {username: 'lani'},
-    {username: 'fika'}
-]
+    { username: 'maradho' }, 
+    { username: 'lani' },
+    { username: 'fika' },
+];
 
-function createUser(user, callback) {
-    setTimeout(() => {
-        users.push(user);
-        callback;
-    }, 2000);
-}
-
-createUser({username: 'mufida'}, () => {
+const getUsers = () => {
     setTimeout(() => {
         console.log(users);
-    }, 1000);
-});
+    }, 1000);    
+};
+
+const createUser = (user) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            users.push(user);
+            let error = false;
+            if (!error) {
+                resolve();
+            } else {
+                reject('Something went wrong');
+            }
+        }, 2000);
+    });
+};
+
+createUser({username: 'alex'}).then(getUsers);
