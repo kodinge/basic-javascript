@@ -79,6 +79,19 @@ let people = [
 //foreach return value
 // people.forEach((item) => console.log(`${item.firstname} ${item.lastname}`));
 
-//some for ceck true or false
-people.some((item) => console.log(item.age < 30));
+//some for check true or false
+// people.some((item) => console.log(item.age < 30));
 
+//every for check true or false at all list 
+// people.every((item) => console.log(item.age < 30));
+
+//reduce for calc/sum
+// let reducePeople = people.reduce((currentItem, item) => {
+//     return item.age + currentItem;
+// }, 0);
+// console.log(reducePeople);
+
+//includes
+let items = [1, 2, 3, 4, 5]
+let includesItems = items.includes(3);
+console.log(includesItems);
