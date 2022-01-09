@@ -57,13 +57,13 @@ let people = [
     }
 ];
 
-// //filter return list
+// //filter return array
 // const filterPeople = people.filter((item) => {
 //     return item.age <= 27;
 // });
 // console.log(filterPeople);
 
-//map return list with clone
+//map return array with modified array
 // const mapPeople = filterPeople.map((item) => {
 //     return {
 //         name: `${item.firstname} ${item.lastname}`,
