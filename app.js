@@ -79,3 +79,6 @@ let people = [
 //foreach return value
 // people.forEach((item) => console.log(`${item.firstname} ${item.lastname}`));
 
+//some for ceck true or false
+people.some((item) => console.log(item.age < 30));
+
