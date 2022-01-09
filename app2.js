@@ -24,4 +24,13 @@ const createUser = (user) => {
     });
 };
 
-createUser({username: 'alex'}).then(getUsers);
+const init = async () => {
+    try {
+        await createUser({username: 'alex'});
+        getUsers();
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+init();
